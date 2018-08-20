@@ -1,0 +1,433 @@
+/**************************************************/
+/* Styles from Homework #1 with a couple minor corrections made*/
+/**************************************************/
+
+
+/* Setting styles shared by all three pages */
+
+
+/* --- Fonts (except heading font-color) */
+* {
+    color: #777777;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Georgia", Times, Times New Roman, serif;
+    font-size: 27px;
+}
+
+
+/* --- Content width and body background*/
+#headercontent {
+    width: 960px;
+}
+
+main {
+    width: 900px;
+}
+
+#headercontent, main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/texturetastic_gray.png");
+}
+
+
+/* --- Header */
+header {
+    padding: 0;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 29.6px 38px;
+    margin: 0;
+}
+
+/* --- --- Nav bar */
+nav {
+    float: right;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    width: 98.6px;
+    margin: 31px 0;
+    border-right: solid #cccccc .2px;
+    font-size: 17px;
+}
+
+nav a:first-child {
+    width: 80.6px;
+}
+
+nav a:last-child {
+    width: 76.6px;
+    text-align: right;
+    border: none;
+    padding-right: 0;
+}
+
+/* --- --- --- Navbar hover */
+nav a:hover {
+    font-weight: bold;
+}
+
+
+/* --- Footer */
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #666666;
+    padding: 40px 0 5px;
+    border-top: 9px solid #4aaaa5;
+}
+
+/* --- --- Sticky footer */
+.container_allexceptfooter {
+    min-height: calc(100vh - 139.5px);
+}
+
+
+/* --- Main content section */
+main {
+    border: 2px #dddddd solid;
+    background: #ffffff;
+    padding: 8px 30px 30px 30px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+main h1 {
+    color: #4aaaa5;
+    width: 900px;
+    padding: 30.6px 0;
+    margin: 0 0 19px;
+    border-bottom: 3px solid #dddddd;
+}
+
+
+/* Setting styles unique to individual pages */
+
+/* --- Profile page */
+#profilepic {
+    float: left;
+    margin: 11px 25px 0 0;
+}
+
+main p {
+    line-height: 2.1;
+}
+
+main p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* --- Portfolio page */
+#port_main { 
+    padding-bottom: 34px;
+}
+
+.port_link {
+    display: inline-block;
+    margin: 21px 40px 34px 0;
+    position: relative;
+    height: 205px;
+}
+
+.port_icon_label {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    padding: 18.6px 0;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    color: #ffffff;
+}
+
+/* ---- --- Portfolio icon hover */
+.port_link {
+    margin-left: 3px;
+}
+#port_main {
+    padding-left: 27px;
+    width: 903px;
+}
+#port_h1 {
+    margin-left: 3px;
+}
+.port_link:hover {
+    border: 3px #dddddd solid;
+    margin: 18px 37px 31px 0;
+}
+
+
+/* --- Contact page */
+label {
+    font-size: 17px;
+    line-height: 2;
+}
+
+input, form textarea {
+    border: 1px #dddddd solid;
+    width: 880px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    line-height: 2;
+}
+
+input:focus, form textarea:focus {
+    outline: 2px solid #4aaaa5;
+}
+
+/* --- --- Submit button */
+#submit_button {
+    height: 40px;
+    width: 115px;
+    margin-top: 8px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+#submit_button:hover {
+    border: 3px #dddddd solid;
+}
+
+/*******************************************************/
+
+/**************************************************/
+/* New Styles */
+/**************************************************/
+
+
+/* Styles to be applied when screen width <= 980 px */
+@media screen and (max-width: 980px) {
+    #headercontent {
+        width: 748px;
+    }
+        
+    main, main h1 {
+        width: 688px;
+    }
+
+    #port_main {
+        width: 691px;
+    }
+
+    input, form textarea {
+        width: 668px;
+    }
+}
+
+
+/* Styles applied when screen width <= 768 px */
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 640px;
+    }
+
+    #headercontent {
+        width: 620px;
+    }
+        
+    main, main h1 {
+        width: 560px;
+    }
+
+    input, form textarea {
+        width: 540px;
+    }
+
+    /* --- Setting width for portfolio page (includes adjustment to allow icons to align with the right edge of the line under the heading */
+    #port_main {
+        width: 566px;
+        padding-right: 27px;
+    }
+
+    #port_h1 {
+        margin-right: 3px;
+    }
+
+    /* --- Adjustments to allow portfolio icons to remain 2-per-line */
+    .port_link, .port_link img {
+        height: 194.75px;
+        width: 259.35px;
+    }
+
+    .port_icon_label {
+        top: 120px;
+        padding: 16px 0;
+    }
+
+    .port_link {
+        margin-right: 33px;
+    }
+
+    .port_link.last_in_row {
+        margin-right: 3px;
+    }
+
+    .port_link:hover {
+        margin-right: 27px;
+    }
+
+    .port_link.last_in_row:hover {
+        margin-right: 0;
+    }
+}
+
+
+/* Styles applied when screen width <= 640 px */
+@media screen and (max-width: 640px) {
+    body {
+        width: 100vw;
+        min-width: 360px;
+    }
+
+    /* --- Header */
+    header {
+        padding: 0;
+        border-bottom: 2px solid #cccccc;
+        background-color: #ffffff;
+    }
+
+    header h1 {
+        display: block;
+        text-align: center;
+        padding: 29.6px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #headercontent, #headercontent h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* --- --- Nav bar */
+    nav {
+        float: none;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 24px 0;
+    }
+    
+    nav a:first-child {
+        width: 98.6pxpx;
+    }
+    
+    nav a:last-child {
+        width: 98.6px;
+        text-align: center;
+        border: none;
+    }
+
+    /* Main section */
+    main, main h1 {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+    }
+
+    #profilepic {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+        height: calc(75vw - 60px);
+        min-height: 210px;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Page */
+    input, form textarea {
+        width: calc(100vw - 100px);
+        min-width: 260px;
+    }
+
+    #submit_button {
+        height: 40px;
+        width: 115px;
+        min-width: 115px;
+    }
+    
+    /* Portfolio page */
+    #port_main {
+        width: calc(100vw - 74px);
+    }
+
+    .port_icon_label {
+        top: 65.9%;
+        font-size: calc(7.33vw - 5.86px);
+        padding-top: calc(6.81vw - 5.45px);
+        padding-bottom: calc(6.81vw - 5.45px);
+    }
+    
+    .port_link, .port_link img {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+        height: calc(75.09vw - 60.07px);
+        min-height: 210.26px;
+    }
+}
+
+/* Styles applied when screen width <= 360 px */
+/* I added this to match the min-width and min-height properties for portfolio icons (see directly above) */
+@media screen and (max-width: 360px) {
+    .port_icon_label {
+        font-size: 20.5px;
+        padding-top: 19.1px;
+        padding-bottom: 19.1px;
+    }
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    margin-top: 131.6px;
+}
+
+.container_allexceptfooter {
+    min-height: calc(100vh - 271.1px);
+}
+
+/* --- Reinstating static header for small screens */
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+
+    main{
+        margin-top: 40px;
+    }
+
+    .container_allexceptfooter {
+        min-height: calc(100vh - 139.5px);
+    }
+}
