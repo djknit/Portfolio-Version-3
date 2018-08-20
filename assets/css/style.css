@@ -148,6 +148,12 @@ main p:last-child {
     margin: 21px 40px 34px 0;
     position: relative;
     height: 205px;
+    width: 273px;
+}
+
+.port_link img {
+    height: 205px;
+    width: 273px;
 }
 
 .port_icon_label {
@@ -193,6 +199,29 @@ main p:last-child {
 
 
 /* --- Contact page */
+/* --- --- Email */
+#my_email {
+    font-size: 26px;
+    text-align: center;
+    border-bottom: 3px solid #dddddd;
+}
+
+#my_email a {
+    text-decoration: none;
+    font-size: 26px;
+}
+
+#my_email a:hover {
+    font-weight: bold;
+}
+
+/* --- --- Form */
+#form_coming_soon {
+    border-bottom: none;
+    font-style: italic;
+    font-size: 24px;
+}
+
 label {
     font-size: 17px;
     line-height: 2;
@@ -226,7 +255,7 @@ input:focus, form textarea:focus {
 /*******************************************************/
 
 /**************************************************/
-/* New Styles */
+/* Adjustments for smaller screens*/
 /**************************************************/
 
 
