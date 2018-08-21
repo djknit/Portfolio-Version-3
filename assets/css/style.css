@@ -318,6 +318,10 @@ input:focus, form textarea:focus {
         padding: 16px 0;
     }
 
+    .coming_soon_label {
+        padding: 16px 0;
+    }
+
     .port_link {
         margin-right: 33px;
     }
@@ -418,11 +422,14 @@ input:focus, form textarea:focus {
         width: calc(100vw - 74px);
     }
 
-    .port_icon_label {
-        top: 65.9%;
+    .port_icon_label, .coming_soon_label{
         font-size: calc(7.33vw - 5.86px);
         padding-top: calc(6.81vw - 5.45px);
         padding-bottom: calc(6.81vw - 5.45px);
+    }
+
+    .port_icon_label {
+        top: 65.9%;
     }
     
     .port_link, .port_link img {
@@ -436,7 +443,7 @@ input:focus, form textarea:focus {
 /* Styles applied when screen width <= 360 px */
 /* I added this to match the min-width and min-height properties for portfolio icons (see directly above) */
 @media screen and (max-width: 360px) {
-    .port_icon_label {
+    .port_icon_label, .coming_soon_label {
         font-size: 20.5px;
         padding-top: 19.1px;
         padding-bottom: 19.1px;
