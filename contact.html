@@ -7,6 +7,9 @@
     <!-- Linking CSS stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Linking Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
 </head>
 <body>
     
@@ -30,26 +33,27 @@
 
             <p id="my_email">Send me an e-mail:<br><a href="mailto:djknit@gmail.com">djknit@gmail.com</a><br><br></p>
 
-            <h1 id="form_coming_soon">Or Coming Soon...</h1>
+            <h1 id="form_heading">Or enter your information here...</h1>
             <!-- Form for entering contact info -->
-            <form>
+            <form id="contact-form">
+                <p id="form-message"></p>
                 <!-- Name -->
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="user_name" placeholder="Jane Smith" required>
+                    <input type="text" id="name" name="name" placeholder="Jane Smith" required>
                 </div>
                 <!-- Email -->
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="user_email" placeholder="example@gmail.com" required>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                 </div>
                 <!-- Message -->
                 <div>
-                    <label for="msg">Message</label>
-                    <textarea rows="6" id="msg" name="user_msg" placeholder="THIS FORM IS NOT YET FUNCTIONAL.  PLEASE SEND ME AN EMAIL." required></textarea>
+                    <label for="message">Message</label>
+                    <textarea rows="6" id="message" name="message" placeholder="Type your message here..." required></textarea>
                 </div>
                 <!-- Submit button -->
-                <input id="submit_button" type="submit" value="Submit">
+                <input id="contact-submit" type="submit" value="Submit">
             </form>
         </main>
         
@@ -58,6 +62,11 @@
     <footer>
         Copyright &copy;
     </footer>
-    
+
+    <!-- Linking my javascript -->
+    <script type="text/javascript" src="assets/javascript/isEmail.js"></script>
+    <script type="text/javascript" src="assets/javascript/databaseHandler.js"></script>
+    <script type="text/javascript" src="assets/javascript/contactFormLogic.js"></script>
+
 </body>
 </html>

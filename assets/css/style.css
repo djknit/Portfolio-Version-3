@@ -217,10 +217,15 @@ main p:last-child {
 }
 
 /* --- --- Form */
-#form_coming_soon {
+#form_heading {
     border-bottom: none;
     font-style: italic;
     font-size: 24px;
+    margin-bottom: 0;
+}
+
+#form-message {
+    margin: 15px 0;
 }
 
 label {
@@ -241,7 +246,7 @@ input:focus, form textarea:focus {
 }
 
 /* --- --- Submit button */
-#submit_button {
+#contact-submit {
     height: 40px;
     width: 115px;
     margin-top: 8px;
@@ -249,7 +254,7 @@ input:focus, form textarea:focus {
     background-color: #4aaaa5;
 }
 
-#submit_button:hover {
+#contact-submit:hover {
     border: 3px #dddddd solid;
 }
 
@@ -383,7 +388,7 @@ input:focus, form textarea:focus {
     }
     
     nav a:first-child {
-        width: 98.6pxpx;
+        width: 98.6px;
     }
     
     nav a:last-child {
