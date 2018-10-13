@@ -49,9 +49,10 @@ header {
 header h1 {
     display: inline-block;
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: #7C18FF;
     padding: 29.6px 38px;
     margin: 0;
+        letter-spacing: 1px;
 }
 
 /* --- --- Nav bar */
@@ -95,7 +96,7 @@ footer {
     color: #ffffff;
     background-color: #666666;
     padding: 40px 0 5px;
-    border-top: 9px solid #4aaaa5;
+    border-top: 9px solid #7C18FF;
 }
 
 /* --- --- Sticky footer */
@@ -114,7 +115,7 @@ main {
 }
 
 main h1 {
-    color: #4aaaa5;
+    color: #7C18FF;
     width: 900px;
     padding: 30.6px 0;
     margin: 0 0 19px;
@@ -159,17 +160,42 @@ main p:last-child {
 
 .port_icon_label {
     position: absolute;
-    top: 135px;
+    top: 65.9%;
     width: 100%;
     padding: 18.6px 0;
-    background-color: #4aaaa5;
+    background-color: #7C18FF;
     text-align: center;
     font-size: 20px;
     font-family: "Georgia", Times, Times New Roman, serif;
     color: #ffffff;
+    text-decoration: none;
 }
 
-.coming_soon_label {
+.port_icon_label.deployed-link {
+    width: 70%;
+    margin-left: 15%;
+    top: 35%;
+    background-color: #FF9C0D;
+}
+
+.port_icon_label.repo-link {
+    width: 70%;
+    margin-left: 15%;
+    top: 68%;
+    background-color: #FF9C0D;
+}
+
+.deployed-link:hover, .repo-link:hover {
+    outline: 2px solid #444444;
+}
+
+/* --- --- Label animation */
+@keyframes moveLabel {
+    from {top: 65.9%;}
+    to {top: 0;}
+}
+
+/* .coming_soon_label {
     position: absolute;
     top: 0;
     width: 100%;
@@ -180,7 +206,7 @@ main p:last-child {
     font-style: italic;
     font-family: "Georgia", Times, Times New Roman, serif;
     color: #ffffff;
-}
+} */
 
 /* ---- --- Portfolio icon hover */
 .port_link {
@@ -324,9 +350,7 @@ input:focus, form textarea:focus {
         padding: 16px 0;
     }
 
-    .coming_soon_label {
-        padding: 16px 0;
-    }
+
 
     .port_link {
         margin-right: 33px;

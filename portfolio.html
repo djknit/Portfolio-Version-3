@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio - David Knittel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Linking CSS stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -31,59 +33,59 @@
         
             <!-- Portfolio Icons -->
             <!-- Row 1 -->
-            <a class="port_link" href="https://djknit.github.io/Project-1">
+            <div class="port_link" project-name="Project-1">
                 <img src="assets/images/cities.png" alt="City Comparison Center">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="Project-1-label">
                     City Comparison Center
                 </div>
-            </a>
-            <a class="port_link" href="https://djknit.github.io/Word-Guess-Game">
+            </div>
+            <div class="port_link last_in_row" project-name="Word-Guess-Game">
                 <img src="assets/images/hangman.png" alt="Hangman">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="Word-Guess-Game-label">
                     Hangman
                 </div>
-            </a>
+            </div>
 
             <br>
             <!-- Row 2 -->            
-            <a class="port_link" href="https://djknit.github.io/Train-Scheduler">
+            <div class="port_link" project-name="Train-Scheduler">
                 <img src="assets/images/trains.png" alt="Train Schedule Manager">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="Train-Scheduler-label">
                     Train Scheduler
                 </div>
-            </a>
+            </div>
 
-            <a class="port_link" href="https://djknit.github.io/TriviaGame">
+            <div class="port_link last_in_row" project-name="TriviaGame">
                 <img src="assets/images/trivia.png" alt="Trivia Game">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="TriviaGame-label">
                     Trivia Game
                 </div>
-            </a>
+            </div>
 
             <br>
             <!-- Row 3 -->
-            <a class="port_link" href="https://djknit.github.io/RPG-Game">
+            <div class="port_link" project-name="RPG-Game">
                 <img src="assets/images/rpg.png" alt="RPG Game">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="RPG-Game-label">
                     RPG Game
                 </div>
-            </a>
+            </div>
 
-            <a class="port_link last_in_row" href="https://djknit.github.io/GifSearch">
-                <img src="assets/images/gifs.png" alt="Rutgers Info Widget">
-                <div class="port_icon_label">
+            <div class="port_link last_in_row" project-name="GifSearch">
+                <img src="assets/images/gifs.png" alt="Gif Search">
+                <div class="port_icon_label" id="GifSearch-label">
                     Gif Search
                 </div>
-            </a>
+            </div>
 
             <br>
             <!-- Row 4 -->
-            <a class="port_link last_in_row" href="https://djknit.github.io/Rock-Paper-Scissors">
+            <div class="port_link" project-name="Rock-Paper-Scissors">
                 <img src="assets/images/rps.png" alt="Rock Paper Scissors">
-                <div class="port_icon_label">
+                <div class="port_icon_label" id="Rock-Paper-Scissors-label">
                     Rock Paper Scissors
                 </div>
-            </a>
+            </div>
 
         </main>
 
@@ -92,6 +94,9 @@
     <footer>
         Copyright &copy;
     </footer>
+
+    <!-- Linking my javascript -->
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
 </body>
 </html>
