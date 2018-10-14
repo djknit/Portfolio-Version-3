@@ -195,6 +195,11 @@ main p:last-child {
     to {top: 0;}
 }
 
+@keyframes moveLabelBack {
+    from {top: 0;}
+    to {top: 65.9%;}
+}
+
 /* .coming_soon_label {
     position: absolute;
     top: 0;
@@ -236,6 +241,7 @@ main p:last-child {
 #my_email a {
     text-decoration: none;
     font-size: 26px;
+    color: #555555;
 }
 
 #my_email a:hover {
@@ -268,7 +274,7 @@ input, form textarea {
 }
 
 input:focus, form textarea:focus {
-    outline: 2px solid #4aaaa5;
+    outline: 2px solid #7C18FF;
 }
 
 /* --- --- Submit button */
@@ -277,7 +283,7 @@ input:focus, form textarea:focus {
     width: 115px;
     margin-top: 8px;
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: #7C18FF;
 }
 
 #contact-submit:hover {
@@ -346,7 +352,7 @@ input:focus, form textarea:focus {
     }
 
     .port_icon_label {
-        top: 120px;
+        /* top: 120px; */
         padding: 16px 0;
     }
 
