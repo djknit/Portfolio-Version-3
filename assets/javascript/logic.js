@@ -11,6 +11,13 @@ $(".port_link").hover(function() {
     const repoLink = $(`<a class="port_icon_label repo-link" id="${projectName}-repo-link" href="https://github.com/djknit/${projectName}">Repository</a>`);
     // Append the links to the icon
     $(this).append(deployedLink).append(repoLink);
+    // Hide the links for .1 seconds so they cannot be clicked at the same time they are appearing (mobile bug)
+    deployedLink.attr("style", "display: none;");
+    repoLink.attr("style", "display: none;");
+    setTimeout(function() {
+        deployedLink.attr("style", "display: auto;");
+        repoLink.attr("style", "display: auto;");
+    }, 100);
 // When mouse leaves icon...
 }, function() {
     // Grab the project-name attribute from the link that was hovered over
