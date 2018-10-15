@@ -186,7 +186,7 @@ main p:last-child {
 }
 
 .deployed-link:hover, .repo-link:hover {
-    outline: 2px solid #444444;
+    outline: 2px solid #888888;
 }
 
 /* --- --- Label animation */
@@ -216,6 +216,7 @@ main p:last-child {
 /* ---- --- Portfolio icon hover */
 .port_link {
     margin-left: 3px;
+    outline: 1px solid #dddddd;
 }
 #port_main {
     padding-left: 27px;
