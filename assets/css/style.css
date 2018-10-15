@@ -133,6 +133,7 @@ main h1 {
 
 main p {
     line-height: 2.1;
+    margin-bottom: 15px;
 }
 
 main p:last-child {
