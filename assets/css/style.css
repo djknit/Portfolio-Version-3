@@ -472,7 +472,7 @@ input:focus, form textarea:focus {
         min-width: 260px;
     }
 
-    #submit_button {
+    #contact-submit {
         height: 40px;
         width: 115px;
         min-width: 115px;

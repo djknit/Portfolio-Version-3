@@ -1,6 +1,6 @@
 // When the contact form is submitted...
 document.getElementById("contact-submit").addEventListener("click", function(event) {
-    console.log("form submit")
+    // console.log("form submit")
     // Prevent the page from reloading
     event.preventDefault();
     
