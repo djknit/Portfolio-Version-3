@@ -226,7 +226,7 @@ main p:last-child {
 
 #contact_methods {
     border-bottom: 3px solid #dddddd;
-    min-height: 126px;
+    /* min-height: 126px; */
 }
 
 .contact_method {
@@ -234,6 +234,7 @@ main p:last-child {
     text-align: center;
     width: 33%;
     vertical-align: top;
+    height: 137px;
 }
 
 .contact_method_text {
@@ -322,10 +323,6 @@ input:focus, form textarea:focus {
 
     #port_main {
         width: 691px;
-    }
-
-    #contact_methods {
-        min-height: 238px;
     }
 
     .contact_method{
@@ -465,7 +462,7 @@ input:focus, form textarea:focus {
         min-height: 238px;
     }
 
-    .contact_method{
+    .contact_method {
         width: 99%;
         height: 137px;
     }
@@ -486,13 +483,10 @@ input:focus, form textarea:focus {
         width: calc(100vw - 74px);
     }
 
-    .port_icon_label, .coming_soon_label{
+    .port_icon_label {
         font-size: calc(7.33vw - 5.86px);
         padding-top: calc(6.81vw - 5.45px);
         padding-bottom: calc(6.81vw - 5.45px);
-    }
-
-    .port_icon_label {
         top: 65.9%;
     }
     
