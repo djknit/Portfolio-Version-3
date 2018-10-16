@@ -223,20 +223,42 @@ main p:last-child {
 
 /* --- Contact page */
 /* --- --- Email */
-#my_email {
+
+#contact_methods {
+    border-bottom: 3px solid #dddddd;
+    min-height: 126px;
+}
+
+.contact_method {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    vertical-align: top;
+}
+
+.contact_method_text {
     font-size: 26px;
     text-align: center;
-    border-bottom: 3px solid #dddddd;
 }
 
-#my_email a {
+.contact_method_text a {
     text-decoration: none;
-    font-size: 26px;
-    color: #555555;
+    font-size: 30px;
+    color: black;
 }
 
-#my_email a:hover {
-    font-weight: bold;
+.contact_method_text a:hover {
+    font-size: 34.4px;
+}
+
+.contact_image {
+    height: 34px;
+    width: auto;
+}
+
+.contact_image:hover {
+    height: 39px;
+    width: auto;
 }
 
 /* --- --- Form */
@@ -300,6 +322,14 @@ input:focus, form textarea:focus {
 
     #port_main {
         width: 691px;
+    }
+
+    #contact_methods {
+        min-height: 238px;
+    }
+
+    .contact_method{
+        width: 49%;
     }
 
     input, form textarea {
@@ -431,6 +461,15 @@ input:focus, form textarea:focus {
     }
 
     /* Contact Page */
+    #contact_methods {
+        min-height: 238px;
+    }
+
+    .contact_method{
+        width: 99%;
+        height: 137px;
+    }
+
     input, form textarea {
         width: calc(100vw - 100px);
         min-width: 260px;
