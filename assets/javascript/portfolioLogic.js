@@ -5,8 +5,15 @@ $(".port_link").hover(function() {
     const projectName = $(this).attr("project-name");
     // Grab the corresponding project title label and move it to the top of the icon
     $("#" + projectName + "-label").attr("style", "animation-name: moveLabel; animation-duration: 300ms; top: 0;");
-    // If the project has a deployed page...
-    if (projectName !== "liri-node-app" && projectName !== "bamazon") {
+    // If the project is deployed to Heroku...
+    if (projectName === "Friend-Finder") {
+        // Create a label to link to the deployed page
+        const deployedLink = $(`<a class="port_icon_label deployed-link" id="${projectName}-deployed-link" href="https://people-matcher.herokuapp.com/">Deployed Page</a>`);
+        // Append the deployed page link to the icon
+        $(this).append(deployedLink);
+    }
+    // If the project has a GitHub deployed page...
+    else if (projectName !== "liri-node-app" && projectName !== "bamazon") {
         // Create a label to link to the deployed page
         const deployedLink = $(`<a class="port_icon_label deployed-link" id="${projectName}-deployed-link" href="https://djknit.github.io/${projectName}">Deployed Page</a>`);
         // Append the deployed page link to the icon
